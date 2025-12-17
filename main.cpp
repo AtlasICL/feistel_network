@@ -1,4 +1,4 @@
-#include "feistel.cpp"
+#include "feistel.hpp"
 
 #include <cstdint>
 #include <functional>
