@@ -24,7 +24,7 @@ private:
     }
 
 public:
-    explicit FeistelNetwork(unsigned int rounds, std::function<std::uint8_t(std::uint8_t, std::uint8_t)> sbox) 
+    explicit FeistelNetwork(std::size_t rounds, std::function<std::uint8_t(std::uint8_t, std::uint8_t)> sbox) 
     : ROUNDS(rounds), SBox(sbox) {}
 
     /** Encrypts the given plaintext with the given key. Returns the ciphertext. */
